@@ -1,14 +1,17 @@
 #!/bin/bash
 set -ex
 
+mkdir bin
 git clone https://github.com/DLab/KaXim.git
 cd KaXim/src/grammar
 make
 cd -
 cd KaXim/Release
 make all
-cp KaXim /usr/bin/KaXim
+cp KaXim ~/bin/KaXim
 
 cd ../Debug
 make all
-cp KaXim /usr/bin/KaXim-Debug
+cp KaXim ~/bin/KaXim-Debug
+
+export PATH=~/bin:$PATH
