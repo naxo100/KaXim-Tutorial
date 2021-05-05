@@ -1,4 +1,5 @@
 
+libfl-dev
 flex
 bison
 libboost-program-options-dev
