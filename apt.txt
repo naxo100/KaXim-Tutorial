@@ -1,7 +1,7 @@
 
 flex
 bison
-libboost_program_options
-libboost_system
-libboost_filesystem
+libboost_program_options-dev
+libboost_system-dev
+libboost_filesystem-dev
 
