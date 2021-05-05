@@ -7,8 +7,8 @@ make
 cd -
 cd KaXim/Release
 make all
-cp KaXim ../../KaXim
+cp KaXim /usr/bin/KaXim
 
 cd ../Debug
 make all
-cp KaXim ../../KaXim-Debug
+cp KaXim /usr/bin/KaXim-Debug
