@@ -11,4 +11,4 @@ cp KaXim ../../KaXim
 
 cd ../Debug
 make all
-cp KaXim /../../KaXim-Debug
+cp KaXim ../../KaXim-Debug
