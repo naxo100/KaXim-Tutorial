@@ -1,0 +1,20 @@
+
+#Agent definition
+%agent: A(i)
+%agent: B(i)
+
+#Rules
+'A+B -> AB'  A(i),B(i) -> A(i!1),B(i!1) @ 1.0
+'AB -> A+B'  A(i!1),B(i!1) -> A(i),B(i) @ 2.0
+
+#Initialization
+%init: 3 A()
+%init: 3 B()
+%init: 2 A(i!1),B(i!1)
+
+#Vars
+%var: 'A' A(i)
+%var: 'B' B(i)
+
+%obs: 'Free A & B' 'A'+'B'
+%obs: 'Complex AB' A(i!1),B(i!1)

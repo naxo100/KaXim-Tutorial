@@ -1,0 +1,10 @@
+
+%params: 'N','decay-rate'
+
+%agent: X()
+
+'decay' X() ->   @ 'decay-rate'    #delete agent X
+
+%init: 'N' X()
+
+%obs: 'Agent X' X()

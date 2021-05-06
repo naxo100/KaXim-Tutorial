@@ -1,0 +1,18 @@
+
+%agent: Pred()
+%agent: Prey()
+
+%params: 'Pred-feed rate','Prey-replicate rate','Pred-die rate'
+
+%var: 'Pred-init' 10*(1+2*[ID])
+%const: 'Prey-init' 80
+
+'Pred-feed' Pred(),Prey() -> Pred(),Pred() @ 'Pred-feed rate'
+'Prey-replicate' Prey() -> Prey(),Prey() @ 'Prey-replicate rate'
+'Pred-die' Pred() ->  @ 'Pred-die rate'
+
+%init: 'Pred-init' Pred()
+%init: 'Prey-init' Prey()
+
+%obs: 'Predator' Pred()
+%obs: 'Prey' Prey()
